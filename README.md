@@ -1,7 +1,6 @@
 # JireAI
 
-[![Main Deployment on Vercel](https://therealsujitk-vercel-badge.vercel.app/?app=jire-ai)](https://jire-ai.vercel.app/)
-[![Staging Deployment on Vercel](https://therealsujitk-vercel-badge.vercel.app/?app=jire-ai-staging)](https://jire-ai-staging.vercel.app/)
+[![Main Deployment on Vercel](https://therealsujitk-vercel-badge.vercel.app/?app=jireai)](https://jireai.vercel.app/)
 
 ## Contribution
 
