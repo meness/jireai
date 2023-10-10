@@ -121,6 +121,7 @@ const AppPage = () => {
                 <Editor
                   initialValue={getValues('jobDescription')}
                   {...register('jobDescription')}
+                  id="job-description"
                   disabled={isGenerating}
                   init={{
                     placeholder: t('app:copy_and_paste_the_job_description_here_label'),
@@ -136,6 +137,7 @@ const AppPage = () => {
                   initialValue={getValues('resume')}
                   disabled={isGenerating}
                   {...register('resume')}
+                  id="resume"
                   onEditorChange={(changedValue) => {
                     setValue('resume', changedValue);
                   }}
@@ -211,6 +213,7 @@ const AppPage = () => {
                 setCoverLetter(changedValue);
               }}
               init={{ placeholder: t('app:generated_cover_letter_label') }}
+              id="cover-letter"
             />
           </div>
         </Transition>
