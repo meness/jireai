@@ -10,13 +10,13 @@ upgrade-insecure-requests;
 
 default-src 'self';
 
-script-src 'self' 'unsafe-inline' 'wasm-eval' 'unsafe-eval' https://www.googletagmanager.com https://tagmanager.google.com *.googletagmanager.com https://www.google-analytics.com https://www.googleadservices.com https://www.google.com https://googleads.g.doubleclick.net https://www.googleanalytics.com https://vercel.live https://vercel.com;
+script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://tagmanager.google.com *.googletagmanager.com https://www.google-analytics.com https://www.googleadservices.com https://www.google.com https://googleads.g.doubleclick.net https://www.googleanalytics.com https://vercel.live https://vercel.com;
 
 style-src 'self' 'unsafe-inline' https://tagmanager.google.com https://fonts.googleapis.com;
 
 font-src 'self' https://fonts.gstatic.com https://assets.vercel.com;
 
-img-src 'self' data: blob: www.googletagmanager.com https://ssl.gstatic.com https://www.gstatic.com *.google-analytics.com *.googletagmanager.com https://googleads.g.doubleclick.net https://www.google.com https://www.google-analytics.com https://www.googletagmanager.com https://*.vercel.com https://vercel.com;
+img-src 'self' data: blob: www.googletagmanager.com https://ssl.gstatic.com https://www.gstatic.com *.google-analytics.com *.googletagmanager.com https://googleads.g.doubleclick.net https://www.google.com https://www.google-analytics.com https://www.googletagmanager.com https://*.vercel.com https://vercel.com https://nowpayments.io;
 
 connect-src * 'self' data: *.google-analytics.com *.analytics.google.com *.googletagmanager.com wss://*.pusher.com https://vitals.vercel-insights.com;
 
