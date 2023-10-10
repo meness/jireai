@@ -80,19 +80,11 @@ const AppPage = ({ Component, pageProps, locale }: AppPropsWithLayout) => {
         />
       </Head>
       {appConfig.env.onProduction && (
-        <>
-          <Script
-            strategy="afterInteractive"
-            id="g-tag-src"
-            async
-            src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_G_TAG_ID}`}
-          />
-          <Script
-            strategy="afterInteractive"
-            id="g-tag-script">
-            {`!function(e,t,a,n,g){e[n]=e[n]||[],e[n].push({"gtm.start":(new Date).getTime(),event:"gtm.js"});var m=t.getElementsByTagName(a)[0],r=t.createElement(a);r.async=!0,r.src="https://www.googletagmanager.com/gtm.js?id=${process.env.NEXT_PUBLIC_G_TAG_ID}",m.parentNode.insertBefore(r,m)}(window,document,"script","dataLayer");`}
-          </Script>
-        </>
+        <Script
+          strategy="afterInteractive"
+          id="g-tag-script">
+          {`!function(e,t,a,n,g){e[n]=e[n]||[],e[n].push({"gtm.start":(new Date).getTime(),event:"gtm.js"});var m=t.getElementsByTagName(a)[0],r=t.createElement(a);r.async=!0,r.src="https://www.googletagmanager.com/gtm.js?id=${process.env.NEXT_PUBLIC_G_TAG_ID}",m.parentNode.insertBefore(r,m)}(window,document,"script","dataLayer");`}
+        </Script>
       )}
 
       <main className="grid min-h-screen grid-cols-[100%] grid-rows-[auto_1fr_auto]">
