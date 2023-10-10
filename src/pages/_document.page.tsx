@@ -10,6 +10,15 @@ const DocumentPage = ({ dir, locale }: DocumentPageProps) => {
       lang={locale}>
       <Head />
       <body>
+        <noscript>
+          <iframe
+            title="google-tag-manager"
+            src="https://www.googletagmanager.com/ns.html?id=GTM-PBGLPSM2"
+            height="0"
+            width="0"
+            style={{ display: 'none', visibility: 'hidden' }}
+          />
+        </noscript>
         <Main />
         <NextScript />
       </body>

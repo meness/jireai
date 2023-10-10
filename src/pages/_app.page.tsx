@@ -90,8 +90,7 @@ const AppPage = ({ Component, pageProps, locale }: AppPropsWithLayout) => {
           <Script
             strategy="afterInteractive"
             id="g-tag-script">
-            {`window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}
-gtag('js',new Date());gtag('config','${process.env.NEXT_PUBLIC_G_TAG_ID}')`}
+            {`!function(e,t,a,n,g){e[n]=e[n]||[],e[n].push({"gtm.start":(new Date).getTime(),event:"gtm.js"});var m=t.getElementsByTagName(a)[0],r=t.createElement(a);r.async=!0,r.src="https://www.googletagmanager.com/gtm.js?id=${process.env.NEXT_PUBLIC_G_TAG_ID}",m.parentNode.insertBefore(r,m)}(window,document,"script","dataLayer");`}
           </Script>
         </>
       )}
