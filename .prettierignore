@@ -1,0 +1,4 @@
+.next
+node_modules
+**/generated
+public/assets/js/tinymce

@@ -1,0 +1,9 @@
+{
+  "extends": ["airbnb-base", "prettier"],
+  "parserOptions": {
+    "project": "jsconfig.json",
+    "sourceType": "module",
+    "ecmaVersion": "latest"
+  },
+  "rules": {}
+}

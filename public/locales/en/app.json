@@ -1,0 +1,16 @@
+{
+  "casual_label": "Casual",
+  "copy_and_paste_the_job_description_here_label": "Copy & paste the job description here.",
+  "copy_text_to_clipboard_label": "Copy text to clipboard",
+  "copy_to_clipboard_label": "Copy to Clipboard",
+  "download_docx_label": "Download DOCX",
+  "download_pdf_label": "Download PDF",
+  "formal_label": "Formal",
+  "generate_cover_letter_label": "Generate Cover Letter",
+  "generated_cover_letter_label": "Generated cover letter.",
+  "generating_your_cover_letter_label": "Generating your cover letter",
+  "select_formality": "Select Formality:",
+  "title": "AI Generates Cover Letter",
+  "use_your_pdf_resume_label": "Use Your PDF Resume",
+  "write_your_resume_here_label": "Write your resume here."
+}

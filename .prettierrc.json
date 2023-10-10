@@ -1,0 +1,25 @@
+{
+  "arrowParens": "always",
+  "bracketSameLine": true,
+  "endOfLine": "lf",
+  "jsxSingleQuote": false,
+  "overrides": [
+    {
+      "files": "*.svg",
+      "options": {
+        "parser": "html"
+      }
+    }
+  ],
+  "plugins": [
+    "prettier-plugin-sort-json",
+    "prettier-plugin-packagejson",
+    "prettier-plugin-organize-imports",
+    "prettier-plugin-jsdoc",
+    "prettier-plugin-tailwindcss"
+  ],
+  "printWidth": 120,
+  "semi": true,
+  "singleAttributePerLine": true,
+  "singleQuote": true
+}

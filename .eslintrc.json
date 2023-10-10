@@ -1,3 +1,14 @@
 {
-  "extends": "next/core-web-vitals"
+  "extends": "./.eslintrc-js.config.json",
+  "overrides": [
+    {
+      "files": ["**/*.json"],
+      "extends": "./.eslintrc-json.config.json"
+    },
+    {
+      "files": ["**/*.ts", "**/*.tsx"],
+      "extends": "./.eslintrc-ts.config.json"
+    }
+  ],
+  "root": true
 }
