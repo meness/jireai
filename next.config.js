@@ -109,10 +109,9 @@ const nextConfig = {
       }),
     );
 
-    config.externals.push('canvas');
-
     return config;
   },
+  outputFileTracingExcludes: ['**canvas**'],
   // StrictMode renders components twice (in dev environment only) in order to detect any problems with your code and warn you about them (which can be quite useful).
   reactStrictMode: true,
   swcMinify: true,
