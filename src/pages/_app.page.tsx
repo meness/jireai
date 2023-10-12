@@ -11,7 +11,6 @@ import Script from 'next/script';
 import { ReactElement, useEffect } from 'react';
 import '~/assets/styles/theme.css';
 import { appConfig } from '~/config';
-import '~/config/pdf.config';
 import { sendGtmPageViewEvent } from '~/helpers';
 import { ThemeProvider } from '~/providers';
 

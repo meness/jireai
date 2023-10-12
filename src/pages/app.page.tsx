@@ -5,6 +5,8 @@ import { useTranslation } from 'next-i18next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { NextSeo } from 'next-seo';
 import dynamic from 'next/dynamic';
+import * as pdf from 'pdfjs-dist';
+import worker from 'pdfjs-dist/build/pdf.worker.entry';
 import React, { useEffect, useRef, useState } from 'react';
 import { useForm } from 'react-hook-form'; // Import React Hook Form
 import * as yup from 'yup';
@@ -14,6 +16,8 @@ import { DonatePopup } from '~/components';
 import { appConfig } from '~/config';
 import { extractPDFText, stripHTMLTags } from '~/helpers';
 import { useGenerateCoverLetter } from '~/hooks';
+
+pdf.GlobalWorkerOptions.workerSrc = worker;
 
 const Editor = dynamic(
   import('~/components/editor.component').then((mod) => {
