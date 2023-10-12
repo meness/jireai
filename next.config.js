@@ -109,6 +109,8 @@ const nextConfig = {
       }),
     );
 
+    config.externals.push('canvas');
+
     return config;
   },
   // StrictMode renders components twice (in dev environment only) in order to detect any problems with your code and warn you about them (which can be quite useful).
