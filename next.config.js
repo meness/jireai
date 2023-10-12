@@ -112,7 +112,10 @@ const nextConfig = {
     return config;
   },
   experimental: {
-    outputFileTracingExcludes: ['**canvas**'],
+    outputFileTracingRoot: path.join(__dirname, '../../'),
+    outputFileTracingExcludes: {
+      '*': ['node_modules/canvas'],
+    },
   },
   // StrictMode renders components twice (in dev environment only) in order to detect any problems with your code and warn you about them (which can be quite useful).
   reactStrictMode: true,
