@@ -4,7 +4,8 @@ import { GetStaticProps } from 'next';
 import { useTranslation } from 'next-i18next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { NextSeo } from 'next-seo';
-import React, { lazy, useEffect, useRef, useState } from 'react';
+import dynamic from 'next/dynamic';
+import React, { useEffect, useRef, useState } from 'react';
 import { useForm } from 'react-hook-form'; // Import React Hook Form
 import * as yup from 'yup';
 import { Formality } from '~/common/enums';
@@ -14,11 +15,12 @@ import { appConfig } from '~/config';
 import { extractPDFText, stripHTMLTags } from '~/helpers';
 import { useGenerateCoverLetter } from '~/hooks';
 
-const Editor = lazy(async () => {
-  const mod = await import('~/components/editor.component');
-
-  return { default: mod.Editor };
-});
+const Editor = dynamic(
+  import('~/components/editor.component').then((mod) => {
+    return mod.Editor;
+  }),
+  { ssr: false },
+);
 
 const generateFormSchema = yup
   .object({
