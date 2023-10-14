@@ -87,7 +87,7 @@
     "validate-branch-name": "^1.3.0"
   },
   "engines": {
-    "node": ">= 16.20.2",
+    "node": ">= 18.18.2",
     "npm": "please-use-yarn",
     "yarn": ">= 1.22.17"
   }
