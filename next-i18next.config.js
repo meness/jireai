@@ -14,7 +14,6 @@ const options = {
   fallbackNS: false,
   nsSeparator: ':',
   localePath: path.resolve('./public/locales'),
-  ns: 'common',
 };
 
 module.exports = options;
