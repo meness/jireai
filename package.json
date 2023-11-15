@@ -89,6 +89,6 @@
   "engines": {
     "node": ">= 16.20.2",
     "npm": "please-use-yarn",
-    "yarn": ">= 1.22.17"
+    "yarn": ">= 1.22.21"
   }
 }
